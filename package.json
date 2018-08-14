@@ -6,7 +6,11 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "cp_redirects": "cp ./_redirects public/_redirects",
+    "cp_headers": "cp ./_headers public/_headers",
+    "cp_robots": "cp ./robots.txt public/robots.txt",
+    "deploy": "gatsby build && npm run cp_redirects && npm run cp_headers && npm run cp_robots"
   },
   "dependencies": {
     "gatsby": "^2.0.0-beta.98",

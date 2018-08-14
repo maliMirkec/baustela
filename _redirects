@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://baustela.netlify.com/* https://baustela.silvestarbistrovic.from.hr/:splat 301!
