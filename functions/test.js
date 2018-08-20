@@ -2,12 +2,8 @@ import fetch from 'node-fetch';
 
 exports.handler = async function (event, context, callback) {
   fetch("https://api.github.com/repositories")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (myJson) {
-      console.log(myJson);
-    });
+    .then(res => res.text())
+    .then(body => console.log(body));
 
   callback(null, {
     statusCode: 200,
