@@ -7,14 +7,6 @@ exports.handler = async function (event, context, callback) {
       console.log(myJson);
     });
 
-  fetch("https://baustela.silvestarbistrovic.from.hr/.netlify/functions/test")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (myJson) {
-      console.log(myJson);
-    });
-
   callback(null, {
     statusCode: 200,
     headers: {
