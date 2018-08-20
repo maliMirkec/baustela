@@ -26,9 +26,10 @@ export default (data, props) => (
         <h1>Test: { data.site.siteMetadata.title }</h1>
         <nav>
           <ul>
-            <ListLink to="/">Početna</ListLink>
+            <ListLink to="/">Poĝetna</ListLink>
             <ListLink to="/kategorije/">Kategorije</ListLink>
             <ListLink to="/o-nama/">O nama</ListLink>
+            <ListLink to="/kontakt/">Kontakt</ListLink>
           </ul>
         </nav>
       </header>
